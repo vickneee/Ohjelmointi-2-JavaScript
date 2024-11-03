@@ -1,9 +1,7 @@
 `use strict`;
 
-const resultId = document.getElementById("resultId");
-const diceRoll = document.getElementById("diceRoll");
-
 function summation(numberOfRolls) {
+  const diceRoll = document.getElementById("diceRoll");
   let sum = 0;
   for (let i = 0; i < numberOfRolls; i++) {
     let randomResult = Math.floor(Math.random() * 6) + 1;
@@ -14,6 +12,7 @@ function summation(numberOfRolls) {
 }
 
 function rollDice() {
+  const resultId = document.getElementById("resultId");
   const numberOfRolls = parseInt(
       prompt(`How many times do you want to roll the dice?`));
   
