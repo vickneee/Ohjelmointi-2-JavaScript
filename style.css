@@ -11,7 +11,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: self-start;
     padding: 1rem;
 }
 
