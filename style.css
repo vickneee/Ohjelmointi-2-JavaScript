@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.module {
+    margin-right: 2rem;
+}
