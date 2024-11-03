@@ -1,7 +1,8 @@
 `use strict`;
 
-function summation(numberOfRolls) {
+function sumOfRolls(numberOfRolls) {
   const diceRoll = document.getElementById("diceRoll");
+  
   let sum = 0;
   for (let i = 0; i < numberOfRolls; i++) {
     let randomResult = Math.floor(Math.random() * 6) + 1;
@@ -20,7 +21,7 @@ function rollDice() {
     alert('Please insert number greater than 1.');
   }
   else if (numberOfRolls > 1) {
-      const sum = summation(numberOfRolls);
+      const sum = sumOfRolls(numberOfRolls);
       resultId.innerHTML = `Sum of ${numberOfRolls} dice rolls is ${sum}.`;
     }
   else {
