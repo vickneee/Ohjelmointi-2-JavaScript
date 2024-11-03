@@ -8,13 +8,37 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     align-items: self-start;
+    flex-wrap: wrap;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .module {
-    margin-right: 2rem;
+    margin-right: 1rem;
+}
+
+.completed {
+    /*display: flex;*/
+    padding: 0 1.5rem;
+    justify-content: center;
+}
+
+th, td {
+    background-color: lightblue;
+    padding: 0.3rem 1rem;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: lightcyan;
 }
