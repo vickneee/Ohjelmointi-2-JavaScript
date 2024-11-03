@@ -1,10 +1,9 @@
 `use strict`;
 
 const resultId = document.getElementById("resultId");
+const answer = confirm("Should I calculate the square root?");
 
 function calculateSquareRoot() {
-  const answer = confirm("Should I calculate the square root?");
-  
   if (answer) {
     const number = prompt("Enter a number: ");
     if (number !== null) {
