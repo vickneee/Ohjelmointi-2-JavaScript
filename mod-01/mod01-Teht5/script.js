@@ -1,11 +1,24 @@
 `use strict`;
 
-const resultId = document.getElementById("resultId");
-
-const year = prompt("Give a year: ");
-
 function isLeapYear(year) {
   return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0);
 }
 
-resultId.innerHTML = isLeapYear(year) ? `The year ${year} is a leap year.` : `The year ${year} is not a leap year.`;
+function printResult() {
+  const resultId = document.getElementById("resultId");
+  const year = prompt("Give a year: ");
+  
+  if (year === null || year === '') {
+    alert(`Please insert a year.`);
+  }
+  else {
+    if (isLeapYear(year)) {
+      resultId.innerHTML = `${year} is a leap year.`;
+    }
+    else {
+      resultId.innerHTML = `${year} is not a leap year.`;
+    }
+  }
+}
+
+printResult();
