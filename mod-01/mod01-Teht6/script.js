@@ -1,5 +1,6 @@
 `use strict`;
 
+const resultId = document.getElementById("resultId");
 
 function calculateSquareRoot() {
   const answer = confirm("Should I calculate the square root?");
@@ -8,18 +9,15 @@ function calculateSquareRoot() {
     const number = prompt("Enter a number: ");
     if (number !== null) {
       const parsedNumber = parseInt(number);
-      document.getElementById(
-          "result").innerHTML = `The square root of ${parsedNumber} is ${Math.sqrt(
-          parsedNumber)}.`;
+      resultId.innerHTML = `The square root of ${parsedNumber} is ${Math.sqrt(
+          parsedNumber).toFixed(2)}.`;
     }
     else {
-      document.getElementById(
-          "result").innerHTML = `The number is not entered.`;
+      resultId.innerHTML = `The number is not entered.`;
     }
   }
   else {
-    document.getElementById(
-        "result").innerHTML = `The square root is not calculated.`;
+    resultId.innerHTML = `The square root is not calculated.`;
   }
 }
 
