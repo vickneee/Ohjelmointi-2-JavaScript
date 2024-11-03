@@ -25,7 +25,7 @@ function randomClass() {
   return chosenClass;
 }
 
-result = randomClass();
+const result = randomClass();
 
 welcomeId.innerHTML = `Welcome to Hogwarts, ${name}!`;
 resultId.innerHTML = `${name}, you have been assigned to the ${result} class.`;
