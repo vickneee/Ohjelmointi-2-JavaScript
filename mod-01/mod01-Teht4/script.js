@@ -25,4 +25,4 @@ function randomClass() {
 result = randomClass();
 
 document.getElementById("welcome").innerHTML = `Welcome ${name}!`;
-document.getElementById("result").innerHTML = `${name} as a new student you have been assigned to the ${result} class.`;
+document.getElementById("result").innerHTML = `${name}, as a new student, you have been assigned to the ${result} class.`;
