@@ -1,30 +1,31 @@
 `use strict`;
 
-function summation(number) {
+const resultId = document.getElementById("resultId");
+const diceRoll = document.getElementById("diceRoll");
+
+function summation(numberOfRolls) {
   let sum = 0;
-  for (let i = 0; i < number; i++) {
+  for (let i = 0; i < numberOfRolls; i++) {
     let randomResult = Math.floor(Math.random() * 6) + 1;
-    document.getElementById('diceRoll').innerHTML += `${randomResult} `;
+    diceRoll.innerHTML += `${randomResult}; `;
     sum += randomResult;
   }
   return sum;
 }
 
 function rollDice() {
-  const diceRolls = parseInt(
+  const numberOfRolls = parseInt(
       prompt(`How many times do you want to roll the dice?`));
   
-  if (diceRolls < 1) {
+  if (numberOfRolls < 1) {
     alert('Please insert number greater than 1.');
   }
-  else if (diceRolls > 1) {
-      let sum = summation(diceRolls);
-      document.getElementById(
-          'result').innerHTML = `Sum of ${diceRolls} dice rolls is ${sum}.`;
+  else if (numberOfRolls > 1) {
+      const sum = summation(numberOfRolls);
+      resultId.innerHTML = `Sum of ${numberOfRolls} dice rolls is ${sum}.`;
     }
   else {
-    document.getElementById(
-        'result').innerHTML = `The dice is not rolled.`;
+    resultId.innerHTML = `The dice is not rolled.`;
   }
 }
 
