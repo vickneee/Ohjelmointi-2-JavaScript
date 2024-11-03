@@ -1,5 +1,8 @@
 `use strict`;
 
+const welcomeId = document.getElementById("welcomeId");
+const resultId = document.getElementById("resultId");
+
 const name = prompt(`Give your name:`);
 
 function randomClass() {
@@ -24,5 +27,5 @@ function randomClass() {
 
 result = randomClass();
 
-document.getElementById("welcome").innerHTML = `Welcome ${name}!`;
-document.getElementById("result").innerHTML = `${name}, as a new student, you have been assigned to the ${result} class.`;
+welcomeId.innerHTML = `Welcome to Hogwarts, ${name}!`;
+resultId.innerHTML = `${name}, you have been assigned to the ${result} class.`;
