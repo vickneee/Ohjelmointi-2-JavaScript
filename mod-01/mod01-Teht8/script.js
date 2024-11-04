@@ -14,7 +14,7 @@ function printLeapYears() {
   }
   else {
     if (startYear < endYear) {
-      for (let year = startYear; year < endYear; year++) {
+      for (let year = startYear; year <= endYear; year++) {
         if (isLeapYear(year)) {
           const listItem = document.createElement("li");
           listItem.innerHTML = year.toString();
@@ -27,6 +27,5 @@ function printLeapYears() {
     }
   }
 }
-
 
 printLeapYears();
