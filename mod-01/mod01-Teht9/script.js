@@ -4,6 +4,7 @@ function isPrime() {
   const number = parseInt(prompt(`Give a number: `));
   const targetId = document.getElementById('targetId');
   
+  
   if (number === 1) {
     targetId.innerHTML = `No, ${number} is not a prime number.`;
     console.log(`No, ${number} is not a prime number.`);
