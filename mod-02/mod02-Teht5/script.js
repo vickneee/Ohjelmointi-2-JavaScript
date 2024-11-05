@@ -19,8 +19,6 @@ function numbersGiven() {
     }
   } while (number !== 0) ;
   
-  numbers.pop(); // remove the last zero
-  
   numbers.sort((a, b) => a - b);
   
   targetId.innerHTML = numbers.join(', ');
