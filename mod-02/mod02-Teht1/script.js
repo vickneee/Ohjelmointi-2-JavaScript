@@ -16,7 +16,7 @@ function reverseOrder() {
     console.log(listOfN);
   }
   
-  targetId.innerHTML = `Reversed list is ${reversedList.join(', ')}`;
+  targetId.innerHTML = `Reversed list order is ${reversedList.join(', ')}`;
 }
 
 reverseOrder();
