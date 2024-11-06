@@ -1,10 +1,11 @@
 `use strict`;
 
 function participants() {
-  const targetOl = document.getElementById("targetOl");
-
+  const targetOl = document.getElementById('targetOl');
+  
   const participants = [];
-  const numberOfParticipants = parseInt(prompt(`How many participants are there?`));
+  const numberOfParticipants = parseInt(
+      prompt(`How many participants are there?`));
   
   for (let i = 0; i < numberOfParticipants; i++) {
     participants.push(prompt(`Enter the participants name:`));
