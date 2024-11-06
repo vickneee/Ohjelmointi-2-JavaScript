@@ -8,7 +8,7 @@ function dogList() {
     dogs.push(prompt(`Give a dog name: `));
   }
   
-    dogs.sort().reverse();
+  dogs.sort().reverse();
   
   for (let i = 0; i < dogs.length; i++) {
     const li = document.createElement('li');
