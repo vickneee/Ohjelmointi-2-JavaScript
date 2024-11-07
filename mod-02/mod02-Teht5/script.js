@@ -19,6 +19,8 @@ function numbersGiven() {
     }
   } while (number !== 0) ;
   
+  numbers.pop();
+  
   numbers.sort((a, b) => a - b);
   
   targetId.innerHTML = numbers.join(', ');
