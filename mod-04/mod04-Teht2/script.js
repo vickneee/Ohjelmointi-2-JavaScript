@@ -4,7 +4,8 @@
 document.querySelector('form').addEventListener('submit', async function(evt) {
   evt.preventDefault();
   
-  const query = document.getElementById('query').value;
+  // const query = document.getElementById('query').value;
+  const query = document.querySelector("input[name=q]").value;
   const url = `https://api.tvmaze.com/search/shows?q=${query}`;
   
   try {
@@ -12,6 +13,6 @@ document.querySelector('form').addEventListener('submit', async function(evt) {
     const data = await response.json();
     console.log(data); // Display results in console
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.log(error.message);
   }
 });
