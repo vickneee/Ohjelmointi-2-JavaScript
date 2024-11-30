@@ -2,10 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="test.js" defer></script>
+    <title>Event Handling</title>
+    <!--    <script src="test.js" defer></script>-->
+    <script src="kokeluja.js" defer></script>
 </head>
 <body>
+<h1>Event Handling</h1>
 <p id="targetId"></p>
+<button id="ekaButton">Testi</button>
+<p class="tekstia"></p>
+<button>Click me</button>
+<ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ul>
+
+<script>
+  const second1 = document.getElementsByTagName('li')[1];  // getElementsByTagname returns an array. The indexes in an array start at zero, so 1 means the second <li> element.
+  const second2 = document.querySelectorAll('li')[1];      // the same with querySelectorAll-function
+  console.log(second1);
+  console.log(second2);
+
+  const bullets = document.querySelectorAll('li');
+
+  for (let bullet of bullets) {
+    bullet.innerHTML = `<b>${bullet.innerHTML}New text</b>`;
+  }
+
+  const x = document.querySelectorAll('p.tekstia');
+
+  x.innerHTML = `UUUUUUUs`;
+</script>
 </body>
 </html>
